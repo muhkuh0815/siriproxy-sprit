@@ -1,0 +1,55 @@
+###
+# siriproxy-sprit  Plugin
+
+This is simple plugin to checks for the cheapes gasstations in Austria
+       
+Remember to load the plugin in the "./siriproxy/config.yml" file !
+
+
+Dieses Plugin fragt spritpreisrechner.at ab und zeigt die 5 billigsten Tankstellen in deiner Nähe auf der google-map an.
+
+      ladet das Plugin in der "./siriproxy/config.yml" datei !
+
+###
+# WIE ES FUNKTIONIERT 
+
+sagt einfach einen Satz mit   "ich|wo" und "Benzin|Diesel tanken"
+
+für Benzin reicht  "ich will Benzin"
+für Diesl müsst ihr   "ich will Diesel tanken" sagen, wenn ihr nur Diesel sagt übersetzt Apple Diesel mit "dies" oder "dieses" ...:-(
+
+###
+# Installation
+
+Ihr benötigt zB. Siriproxy 0.3.0:
+
+einfach folgende Zeilen in die User/xxx/.siriproxy/config.yml Datei einfügen (Vorsicht mit Zeilenumbrüchen!!)
+
+- name: 'Sprit'
+  git: 'git://github.com/muhkuh0815/siriproxy-sprit.git'
+
+danach einmal Siriproxy bundlen
+die Plugin Dateien liegen dann in
+/User/xxx/.rvm/gems/ruby-1.9.3/bundler/gems/siriproxy-sprit
+Vorsicht beim editieren, bei jedem Siriproxy update werden sie wieder überschrieben.
+
+
+Falls ihr das Plugin für euch anpassen wollt empfehle ich die Plugindateien von github runterzuladen und sie in
+/User/xxx/Siriproxy/plugins/siriproxy-sprit
+zu kopieren.
+Der richtige Eintrag in der config.yml Datei wäre dann:
+
+- name: 'Sprit'
+  path: '/Users/EuerUserName/SiriProxy/plugins/siriproxy-sprit'
+
+###
+# ToDo
+
+-
+
+###
+# Kontakt
+
+bei Fragen Twitter: @muhkuh0815
+oder github.com/muhkuh0815/siriproxy-sprit
+Video preview: noch kein video verfügbar
